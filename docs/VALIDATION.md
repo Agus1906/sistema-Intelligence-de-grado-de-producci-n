@@ -8,6 +8,16 @@ Python 3.12.15: **35 passed, 2 skipped**. Las dos omitidas requieren Redis 8 rea
 
 Las pruebas usan modelos/transporte simulados y no acreditan por sí solas funcionamiento de un proveedor real. El apartado siguiente documenta las llamadas reales.
 
+Se repitió la suite en un entorno virtual propio de esta entrega, instalado desde `requirements-lock.txt`: **35 passed, 2 skipped**, Ruff correcto y ninguna dependencia incompatible. La búsqueda de tests se limita a `tests/` para evitar recopilar clones o evidencias guardados en `output/`.
+
+## Clon limpio
+
+Se clonó el repositorio publicado en otra carpeta, sin `.env`, bases de datos ni archivos de las preentregas. Se generaron claves aleatorias nuevas con `scripts/bootstrap.py` y se levantaron API y worker con el entorno Python 3.12 independiente de la entrega. `/health` respondió correctamente y una tarea HTTP offline terminó en DONE con 190 horas de ahorro. [Registro](../evidence/clean-clone-smoke.json).
+
+Esta comprobación valida el código clonado con dependencias instaladas, sin credenciales externas. No equivale a validar una instalación completa sobre otro sistema operativo; `run.sh` y el perfil Docker requieren comprobación en sus respectivos entornos.
+
+También se ejecutó `run.ps1` en la copia principal con el entorno virtual ya instalado. El lanzador levantó API y worker y `/health` devolvió `{"status":"ok"}`. El primer paso de creación de venv requiere Python 3.12 disponible mediante `py -3.12`, según el README.
+
 ## Cinco ejecuciones reales por HTTP
 
 Configuración: SQLite durable, un worker secuencial, `AGENT_MODE=llm`, Anthropic `claude-haiku-4-5-20251001`, recuperación BM25 y LangSmith habilitado. Cinco POST enviados concurrentemente; todos terminaron en DONE. El worker procesa secuencialmente, por lo que los tiempos de cliente incluyen espera en cola y polling.

@@ -1,0 +1,11 @@
+{
+  "clean_checkout": true,
+  "mode": "offline",
+  "health": "ok",
+  "job_id": "55cc6066-223a-4f5e-baf7-210a62532dbf",
+  "status": "DONE",
+  "savings_hours": 190,
+  "credential_source": "fresh randomly generated .env",
+  "python": "3.12.15",
+  "environment": "independent intelligence-system/.venv"
+}
