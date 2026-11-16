@@ -1,0 +1,14 @@
+fastapi>=0.115,<1
+uvicorn[standard]>=0.34,<1
+redis>=5.2,<7
+langgraph>=1.2.20,<2
+langgraph-checkpoint-redis>=0.3,<1
+langchain-openai>=1,<2
+langchain-anthropic>=1,<2
+langsmith>=0.4,<1
+pydantic-settings>=2.7,<3
+httpx>=0.28,<1
+
+langgraph-checkpoint-sqlite>=3.0.1,<4
+aiosqlite>=0.20,<1
+rank-bm25>=0.2.2,<1

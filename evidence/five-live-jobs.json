@@ -1,0 +1,36 @@
+{
+  "batch": "b01ea1de-e6ab-496b-bce4-708bca18ae1d",
+  "jobs": [
+    {
+      "job_id": "d4593748-f995-4e5c-9494-a1f89aab2ad2",
+      "status": "DONE",
+      "enqueue_seconds": 0.38487939996412024,
+      "total_seconds": 50.1002240999951
+    },
+    {
+      "job_id": "7f0f0689-053d-4a4a-95c9-87e538a32930",
+      "status": "DONE",
+      "enqueue_seconds": 0.32949759997427464,
+      "total_seconds": 11.491644699999597
+    },
+    {
+      "job_id": "14be4513-4581-421f-a5aa-6be51c4774c3",
+      "status": "DONE",
+      "enqueue_seconds": 0.3416984000359662,
+      "total_seconds": 39.95537770004012
+    },
+    {
+      "job_id": "c0d682a7-1b66-4219-8043-41e8dde93005",
+      "status": "DONE",
+      "enqueue_seconds": 0.33061990002170205,
+      "total_seconds": 21.714432800014038
+    },
+    {
+      "job_id": "b0946a9b-257a-43ff-9e47-37402f719bc1",
+      "status": "DONE",
+      "enqueue_seconds": 0.33453380002174526,
+      "total_seconds": 29.81026880000718
+    }
+  ],
+  "client_p95_seconds": 50.1002240999951
+}

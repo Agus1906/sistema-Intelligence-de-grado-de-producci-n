@@ -1,0 +1,5 @@
+[
+  {"id": "rpa-01", "title": "Piloto administrativo: facturas", "text": "Automatización RPA Python de facturas administrativas: antes 12 minutos, después 3 minutos por factura.", "before_minutes": 12, "after_minutes": 3, "volume_month": 800, "source": "simulado://piloto/facturas", "simulated": true},
+  {"id": "rpa-02", "title": "Piloto administrativo: conciliación", "text": "Automatización RPA Python de conciliación de registros administrativos: antes 20 minutos, después 5 minutos por registro.", "before_minutes": 20, "after_minutes": 5, "volume_month": 200, "source": "simulado://piloto/conciliacion", "simulated": true},
+  {"id": "rpa-03", "title": "Piloto administrativo: reportes", "text": "Automatización RPA Python de reportes administrativos: antes 30 minutos, después 10 minutos por reporte.", "before_minutes": 30, "after_minutes": 10, "volume_month": 60, "source": "simulado://piloto/reportes", "simulated": true}
+]
